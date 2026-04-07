@@ -17,8 +17,8 @@ function toggle_instructions() {
 
 //Stay Logged In
 function logged_in() {
-    checkbox = document.getElementById('stay');
-    output = document.getElementById('output');
+    const checkbox = document.getElementById('stay');
+    const output = document.getElementById('output');
     
     if (checkbox.checked) {
         output.innerHTML = 'Your session will stay active on this device.';
