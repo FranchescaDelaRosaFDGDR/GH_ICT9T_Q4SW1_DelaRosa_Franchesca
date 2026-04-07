@@ -15,11 +15,16 @@ function toggle_instructions() {
     document.getElementById('toggle').innerHTML = 'Kindly fill up the following details. After doing so, click the login button to successfully log in to your account. If the password and/or username is incorrect, please try again.';
 }
 
-//Stay Logged In
+// Stay Logged In
 function logged_in() {
     const checkbox = document.getElementById('stay');
     const output = document.getElementById('output');
-    
+
+    if (!checkbox || !output) {
+        console.warn('Checkbox or output element not found!');
+        return; // Exit if elements are missing to prevent errors
+    }
+
     if (checkbox.checked) {
         output.innerHTML = 'Your session will stay active on this device.';
     } else {
