@@ -16,7 +16,7 @@ function toggle_instructions() {
 }
 
 //Stay Logged In
-function stay_loggedin() {
+function logged_in () {
     const checkbox = document.getElementById('toggle1');
     const message = document.getElementById('message');
 
