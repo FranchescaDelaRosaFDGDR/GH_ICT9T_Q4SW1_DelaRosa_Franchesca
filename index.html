@@ -47,9 +47,12 @@
                     <input type="password" class="form-control" required id="input2" placeholder="Enter password">
                 </div>
 
-                <div>
-                    <input type="checkbox">Stay logged in?
-                </div><br>
+              <div>
+                    <input type="checkbox" onclick="stay_loggedin()" id="toggle1">
+                    Stay logged in?
+              </div>
+
+                <p id="message"></p>
 
                 <div class="d-grid gap-2"> 
                     <input type="button" class="btn btn-primary" onclick="username_password()" value="Login">
