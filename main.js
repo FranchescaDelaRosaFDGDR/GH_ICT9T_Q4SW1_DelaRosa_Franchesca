@@ -16,13 +16,13 @@ function toggle_instructions() {
 }
 
 //Stay Logged In
-function logged_in () {
-    const checkbox = document.getElementById('toggle1');
-    const message = document.getElementById('message');
-
+function logged_in() {
+    checkbox = document.getElementById('stay');
+    output = document.getElementById('output');
+    
     if (checkbox.checked) {
-        message.innerHTML = 'Your session will stay active on this device.';
+        output.innerHTML = 'Your session will stay active on this device.';
     } else {
-        message.innerHTML = '';
+        output.innerHTML = '';
     }
 }
