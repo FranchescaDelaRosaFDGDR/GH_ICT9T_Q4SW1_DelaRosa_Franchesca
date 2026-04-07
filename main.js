@@ -14,3 +14,15 @@ function username_password () {
 function toggle_instructions() {
     document.getElementById('toggle').innerHTML = 'Kindly fill up the following details. After doing so, click the login button to successfully log in to your account. If the password and/or username is incorrect, please try again.';
 }
+
+//Stay Logged In
+function stay_loggedin() {
+    const checkbox = document.getElementById('toggle1');
+    const message = document.getElementById('message');
+
+    if (checkbox.checked) {
+        message.innerHTML = 'Your session will stay active on this device.';
+    } else {
+        message.innerHTML = '';
+    }
+}
